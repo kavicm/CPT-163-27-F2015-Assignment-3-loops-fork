@@ -15,12 +15,12 @@ public class MKAssignment3 {
         String word;
         
         //Get user's word
-        System.out.print("Please enter a 5 letter word. ");
+        System.out.print("Please enter a word. ");
         word = keyboard.next();
         
         //Output the reverse of the word
         System.out.print(word + " => ");
-         for(loopVal = 4; loopVal >= end; loopVal--){
+         for(loopVal = (word.length()-1); loopVal >= end; loopVal--){
              char letter = word.charAt(loopVal);
              System.out.print(letter);
          }
